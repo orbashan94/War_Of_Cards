@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ADB8AC"
+
+    tools:context=".activities.Activity_Menu">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            >
+
+       <TextView
+           android:id="@+id/main_LBL_title"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+           android:textSize="70dp"
+
+           android:text="War Of Cards"
+            android:textColor="@color/black"
+        />
+        <ImageView
+            android:id="@+id/main_IMG_swords"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_below="@+id/main_LBL_title"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/swords_menu"
+
+
+            />
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+
+        <Button
+            android:id="@+id/main_BTN_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:text="Play"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/main_BTN_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/main_BTN_play"
+
+            android:text="Record"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

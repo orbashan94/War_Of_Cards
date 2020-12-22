@@ -1,4 +1,4 @@
-package war.of.cards;
+package war.of.cards.objects;
 
 import java.util.Random;
 
@@ -6,6 +6,7 @@ public class Deck extends Card {
 
     private final Card[] cards;
     private int top;
+    
 
     public Deck() {
         cards = new Card[Card.getTypes().length * (Card.getMaxRank() - Card.getMinRank() + 1)];

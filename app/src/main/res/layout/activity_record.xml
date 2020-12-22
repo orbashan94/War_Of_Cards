@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Activity_Record"
+    android:orientation="vertical"
+    android:background="#ADB8AC">
+
+    <FrameLayout
+        android:id="@+id/record_LAY_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_marginBottom="5dp"
+        android:background="#45454545"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/record_LAY_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#45454545"
+
+        />
+
+    <Button
+        android:id="@+id/record_BTN_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+
+        android:text="back to menu"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+
+        />
+
+</LinearLayout>

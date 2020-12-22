@@ -1,4 +1,4 @@
-package war.of.cards;
+package war.of.cards.objects;
 
 
 import java.util.Objects;

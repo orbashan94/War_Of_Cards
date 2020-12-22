@@ -1,62 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="#ADB8AC"
 
-    tools:context=".Activity_Winner">
+    tools:context=".activities.Activity_Winner">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_gravity="center"
+
+        >
 
 
-    <TextView
-        android:id="@+id/winner_LBL_title"
+
+        <TextView
+            android:id="@+id/winner_LBL_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="50sp"
+            android:textColor="@color/black"
+
+            android:text="The Winner Is:"
+
+            />
+
+        <TextView
+            android:id="@+id/winner_LBL_playerWin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/winner_LBL_title"
+            android:layout_centerHorizontal="true"
+            android:padding="20dp"
+            android:text="Player"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/winner_IMG_trophy"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/winner_LBL_playerWin"
+            android:src="@drawable/trophy"
+
+            />
+
+        <TextView
+            android:id="@+id/winner_LBL_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/winner_IMG_trophy"
+            android:text="Score: 00"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
 
-        android:text="The Winner Is:"
-        android:textSize="50sp"
-        android:textColor="@color/black"
-        />
+        <Button
+            android:id="@+id/winner_BTN_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:text="Menu"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            />
 
-
-    <TextView
-        android:id="@+id/winner_LBL_playerWin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/winner_LBL_title"
-        android:layout_centerHorizontal="true"
-        android:padding="20dp"
-        android:text="Player"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-
-    />
-
-    <ImageView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:src="@drawable/trophy"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/winner_LBL_playerWin"
-
-        />
-
-    <TextView
-        android:id="@+id/winner_LBL_score"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
-
-        android:text="Score: 00"
-        android:textSize="40sp"
-        android:textColor="@color/black"
-        />
+        <Button
+            android:id="@+id/winner_BTN_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/winner_BTN_menu"
+            android:text="Record"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            />
 
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+

@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#ADB8AC"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".activities.Activity_Game">
 
 
     <RelativeLayout
@@ -24,7 +24,7 @@
 
         <TextView
 
-            android:id="@+id/main_LBL_scorePlayerA"
+            android:id="@+id/game_LBL_scorePlayerA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
@@ -39,7 +39,7 @@
 
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_below="@+id/main_LBL_scorePlayerA"
+            android:layout_below="@+id/game_LBL_scorePlayerA"
 
             android:src="@drawable/ic_player"
 
@@ -53,38 +53,39 @@
         android:layout_height="wrap_content"
         android:layout_weight="4">
 
+        <ProgressBar
+            android:id="@+id/game_PRG_gameProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:max="26"
+            android:progress="0" />
+
         <ImageView
-            android:id="@+id/main_IMG_cardPlayerA"
+            android:id="@+id/game_IMG_cardPlayerA"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-
-            android:src="@drawable/img_card_0_0"
-
-
             />
 
         <ImageView
-            android:id="@+id/main_IMG_cardPlayerB"
+            android:id="@+id/game_IMG_cardPlayerB"
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
 
-
-            android:src="@drawable/img_card_0_0"
-
-
             />
 
         <ImageView
-            android:id="@+id/main_IMG_play"
+            android:id="@+id/game_IMG_timer"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/play_button"
+            android:src="@drawable/timer_icon"
 
             />
 
@@ -104,7 +105,7 @@
 
         <TextView
 
-            android:id="@+id/main_LBL_scorePlayerB"
+            android:id="@+id/game_LBL_scorePlayerB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="20dp"
@@ -119,8 +120,8 @@
 
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_below="@+id/main_LBL_scorePlayerB"
-            android:layout_alignEnd="@+id/main_LBL_scorePlayerB"
+            android:layout_below="@+id/game_LBL_scorePlayerB"
+            android:layout_alignEnd="@+id/game_LBL_scorePlayerB"
             android:src="@drawable/ic_playerb"
 
             />

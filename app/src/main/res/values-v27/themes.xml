@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Theme.WarOfCards" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
@@ -15,6 +16,7 @@
         <!-- Customize your theme here. -->
 
 
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
 
 
 
